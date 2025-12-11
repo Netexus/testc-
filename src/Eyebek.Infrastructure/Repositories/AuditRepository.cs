@@ -11,7 +11,8 @@ public class AuditRepository : IAuditRepository
 
     public async Task AddAsync(Audit audit)
     {
-        _db.Audits.Add(audit);
-        await _db.SaveChangesAsync();
+        // _db.Audits.Add(audit);
+        // await _db.SaveChangesAsync();
+        await Task.CompletedTask;
     }
 }
